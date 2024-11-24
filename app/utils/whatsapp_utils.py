@@ -4,12 +4,6 @@ from flask import current_app, jsonify
 import json
 import requests
 
-# from app.services.openai_service import generate_response
-# Replace with your actual API key
-API_KEY = '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'
-API_URL = 'https://api.openai.com/v1/chat/completions'
-
-
 def log_http_response(response):
     logging.info(f"Status: {response.status_code}")
     logging.info(f"Content-type: {response.headers.get('content-type')}")
