@@ -4,6 +4,7 @@ from flask import current_app, jsonify
 import json
 import requests
 
+
 def log_http_response(response):
     logging.info(f"Status: {response.status_code}")
     logging.info(f"Content-type: {response.headers.get('content-type')}")
